@@ -2,8 +2,11 @@
 
 <mat-card>
     <mat-form-field>
-      <textarea matInput placeholder="Post Content" [(ngModel)]="enteredValue"></textarea>
-    </mat-form-field>    
+      <input matInput type="text" [(ngModel)]="title"/>
+    </mat-form-field>
+  <mat-form-field>
+      <textarea matInput placeholder="Post Content" [(ngModel)]="content"></textarea>
+    </mat-form-field>
     <button mat-button color="primary" type="submit" (click)="addPost()">Submit</button>
 </mat-card>
 <!-- <textarea rows="6" [(ngModel)]="enteredValue"></textarea> -->
